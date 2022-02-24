@@ -1,7 +1,8 @@
 package com.lxl.vueblog.service;
 
-import com.lxl.vueblog.system.entity.MUser;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lxl.vueblog.entity.User;
 
 /**
  * <p>
@@ -11,6 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Saleh
  * @since 2022-02-23
  */
-public interface IMUserService extends IService<MUser> {
+public interface UserService extends IService<User> {
 
 }

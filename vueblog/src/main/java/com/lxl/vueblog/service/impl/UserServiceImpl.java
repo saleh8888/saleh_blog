@@ -1,9 +1,8 @@
 package com.lxl.vueblog.service.impl;
-
-import com.lxl.vueblog.system.entity.MUser;
-import com.lxl.vueblog.system.mapper.MUserMapper;
-import com.lxl.vueblog.system.service.IMUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lxl.vueblog.entity.User;
+import com.lxl.vueblog.mapper.UserMapper;
+import com.lxl.vueblog.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,6 +14,6 @@ import org.springframework.stereotype.Service;
  * @since 2022-02-23
  */
 @Service
-public class MUserServiceImpl extends ServiceImpl<MUserMapper, MUser> implements IMUserService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
 }

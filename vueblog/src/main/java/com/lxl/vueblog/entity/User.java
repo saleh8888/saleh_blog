@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @TableName("m_user")
 @ApiModel(value = "MUser对象", description = "")
-public class MUser implements Serializable {
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

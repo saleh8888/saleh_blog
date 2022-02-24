@@ -1,7 +1,8 @@
 package com.lxl.vueblog.service;
 
-import com.lxl.vueblog.system.entity.MBlog;
+
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lxl.vueblog.entity.MBlog;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Saleh
  * @since 2022-02-23
  */
-public interface IMBlogService extends IService<MBlog> {
+public interface IMBlogService {
+//public interface IMBlogService extends IService<MBlog> {
 
 }

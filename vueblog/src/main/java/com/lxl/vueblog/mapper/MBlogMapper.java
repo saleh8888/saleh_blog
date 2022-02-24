@@ -1,7 +1,8 @@
 package com.lxl.vueblog.mapper;
 
-import com.lxl.vueblog.system.entity.MBlog;
+import com.lxl.vueblog.entity.MBlog;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Saleh
  * @since 2022-02-23
  */
+@Component
 public interface MBlogMapper extends BaseMapper<MBlog> {
 
 }
