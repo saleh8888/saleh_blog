@@ -14,11 +14,11 @@ public class CodeGenerator {
 //                    .packageConfig(builder -> {
 //                        builder.parent("com.lxl.vueblog") // 设置父包名
 //                                .moduleName("system") // 设置父包模块名
-//                                .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "D://mapper")); // 设置mapperXml生成路径
+//                                .pathInfo(Collections.singletonMap(OutputFile. "D://mapper")); // 设置mapperXml生成路径
 //                    })
 //                    .strategyConfig(builder -> {
-//                        builder.addInclude("m_user","m_blog") // 设置需要生成的表名
-//                                .addTablePrefix("t_", "c_"); // 设置过滤表前缀
+//                        builder.addInclude("m_log") // 设置需要生成的表名
+//                                .addTablePrefix(null, null); // 设置过滤表前缀
 //                    })
 //                    .templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板
 //                    .execute();

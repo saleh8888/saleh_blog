@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lxl.vueblog.busin.mapper.MlogMapper">
+    <select id="queryById" parameterType="Long" resultType="com.lxl.vueblog.busin.entity.Mlog">
+        select
+        log.*, blog.description
+        from
+            m_log log left join m_blog blog
+            on log.blog_title = blog.title
+        where log.id = #{id}
+    </select>
+
+    <select id="queryMapById" resultType="map">
+        select
+        log.*, blog.description
+        from
+            m_log log left join m_blog blog
+            on log.blog_title = blog.title
+        where log.id = #{id}
+    </select>
+    <insert id="">
+
+    </insert>
+    <select id="selectByOther" resultType="com.lxl.vueblog.busin.entity.Mlog">
+        select * from m_log where a = #{a} and b = #{b}
+    </select>
+
+    <select id="queryByPage" resultType="com.lxl.vueblog.busin.entity.Mlog">
+        select
+        log.*, blog.description
+        from
+            m_log log left join m_blog blog
+            on log.blog_title = blog.title
+        where blog.title = #{id}
+    </select>
+</mapper>

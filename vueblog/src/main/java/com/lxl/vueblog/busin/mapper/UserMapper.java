@@ -1,6 +1,6 @@
-package com.lxl.vueblog.mapper;
+package com.lxl.vueblog.busin.mapper;
 
-import com.lxl.vueblog.entity.User;
+import com.lxl.vueblog.busin.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Component;
 

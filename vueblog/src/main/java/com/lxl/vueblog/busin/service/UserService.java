@@ -1,8 +1,8 @@
-package com.lxl.vueblog.service;
+package com.lxl.vueblog.busin.service;
 
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lxl.vueblog.entity.User;
+import com.lxl.vueblog.busin.entity.User;
 
 /**
  * <p>

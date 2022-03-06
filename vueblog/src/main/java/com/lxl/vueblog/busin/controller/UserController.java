@@ -1,10 +1,9 @@
-package com.lxl.vueblog.controller;
+package com.lxl.vueblog.busin.controller;
 
 
 import com.lxl.vueblog.common.Result;
-import com.lxl.vueblog.entity.User;
-import com.lxl.vueblog.service.UserService;
-import com.lxl.vueblog.service.impl.UserServiceImpl;
+import com.lxl.vueblog.busin.entity.User;
+import com.lxl.vueblog.busin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -30,11 +29,8 @@ public class UserController {
     public Result index(@PathVariable("id") Long id) {
         User user = new User();
         return Result.success(user);
-
-
-//        UserService userService = new UserServiceImpl();
-       // return userService.getById(id);
     }
+
     @PostMapping("/save")
     public Result save(@Validated @RequestBody User user){ return Result.success(user); }
 }

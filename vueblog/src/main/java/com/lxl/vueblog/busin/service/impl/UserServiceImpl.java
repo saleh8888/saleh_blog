@@ -1,8 +1,8 @@
-package com.lxl.vueblog.service.impl;
+package com.lxl.vueblog.busin.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lxl.vueblog.entity.User;
-import com.lxl.vueblog.mapper.UserMapper;
-import com.lxl.vueblog.service.UserService;
+import com.lxl.vueblog.busin.entity.User;
+import com.lxl.vueblog.busin.mapper.UserMapper;
+import com.lxl.vueblog.busin.service.UserService;
 import org.springframework.stereotype.Service;
 
 /**
